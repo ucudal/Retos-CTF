@@ -10,7 +10,7 @@ Para resolverlo, utilicé un enfoque de fuerza bruta con la herramienta ZAP. Est
 
 ### Exploración inicial
 
-Primero, copé la URL del desafío y la cargué en la opción de exploración manual de ZAP.
+Primero, copié la URL del desafío y la cargué en la opción de exploración manual de ZAP.
 
 <img src="resources/exporacionManual.png" alt="exploracionManual">
 
