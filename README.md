@@ -6,7 +6,9 @@ Este repositorio está orientado a **documentar**, **organizar** y **compartir l
 ## Categorías
 - [Mobile](./categories/mobile/README.md)
 - [Web](./categories/web/README.md)
-- [Crypto](./categories/crypto/README.md)
+- [Cryptography](./categories/crypto/README.md)
+- [Miscellaneous](./categories/misc/README.md)
+- [Hardware](./categories/hardware/README.md)
 
 ## Getting started
 - [Getting started](/getting-started/README.md):  
