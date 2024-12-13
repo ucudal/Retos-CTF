@@ -15,7 +15,7 @@ Listas de Posiciones: También identificamos listas de números que, según nues
 En la siguiente imagen se pueden observar estas listas dentro del script que encontramos durante nuestra exploración:
 
 
-![alt text](image.png)
+![alt text](resources/image.png)
 
 
 ### Resolución 
@@ -57,4 +57,4 @@ for key, words in wordSets.items():
 ## Resultados
 Al ejecutar este script, obtuvimos los grupos correctos para cada nivel de forma inmediata. La salida del programa fue la siguiente:
 
-![alt text](image2.png)
+![alt text](resources/image2.png)
