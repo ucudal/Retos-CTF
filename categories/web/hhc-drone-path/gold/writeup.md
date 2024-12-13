@@ -59,7 +59,7 @@ print("Cadena binaria:", binary_string)
 2. Convierte los valores **TRUE** a **1** y **FALSE** a **0**.
 3. Genera un archivo `filtered_output.txt` que contiene únicamente la cadena binaria resultante.
 
-![Archivo resultalte con binarios](resources/binaries.png)
+![Archivo resultalte con binarios](resources/binary.png)
 
 ## Traducción del Binario
 
@@ -73,7 +73,7 @@ Al traducir el binario, el archivo resultante contenía varios símbolos al inic
 CODEWORD - EXPERTTURKEYCARVERMEDAL
 ```
 
-![Traducción de la secuencia binaria](resources/binaries.png)
+![Traducción de la secuencia binaria](resources/codeword.png)
 
 
 ### Conclusión
