@@ -1,8 +1,9 @@
-Luego de completar el desafío en dificultad "**Silver**", el elfo nos dice que es posible hacer un bypass de lo que hicimos anteriormente y escribir un script para completar el desafío. Además, nos da pistas acerca de cómo podemos lograrlo:
+# Desafío: PowerShell Gold
+Luego de completar el desafío en dificultad [silver](./../silver/writeup.md), el elfo nos dice que es posible hacer un bypass de lo que hicimos anteriormente y escribir un script para completar el desafío. Además, nos da pistas acerca de cómo podemos lograrlo:
 
-![[ps18.png]]
+![ps18.png](resources/ps18.png)
 
-![[ps19.png]]
+![ps19.png](resources/ps19.png)
 
 Lo primero que se me ocurrió fue iterar sobre las filas del archivo `token_overview.csv` que contiene los endpoints (en principio) redactados y crear un archivo que contenga el Hash MD5, luego pipear cada uno de los contenidos de los archivos a `Get-FileHash -Algorithm SHA256` para obtener todos los hashes. Una vez hecho esto, intentar verificar los endpoints contra la URI `http://127.0.0.1:1225/tokens/<sha256sum>`.
 
@@ -38,7 +39,7 @@ Este script obtiene los valores MD5 de cada fila del archivo `token_overview.csv
 
 Luego de ejecutado el script, obtuve:
 
-![[ps21.png]]
+![ps21.png](resources/ps21.png)
 
 Al parecer se está seteando una cookie "attempts", lo que se condice con lo que el elfo había dicho sobre el protocolo _EDR_. Entonces volví a ejecutar los mismos comandos que usé previamente, pero esta vez agregando la cookie "attempts" con un valor inicialmente de 50 para probar.
 
@@ -70,6 +71,6 @@ Import-Csv -Path $csv | ForEach-Object {
 
 El output fue exitoso:
 
-![[ps22.png]]
+![ps22.png](resources/ps22.png)
 
 Aquí termina el desafío en dificultad "**Gold**".

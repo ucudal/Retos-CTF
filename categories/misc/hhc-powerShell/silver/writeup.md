@@ -1,13 +1,14 @@
+# Desafío: PowerShell Silver
 En este desafío se requiere el uso del intérprete PowerShell. Consiste en resolver una serie de desafíos a través de la consola para evadir una suerte de defensa por parte de los elfos y ganar nuevamente acceso a las operaciones del arsenal.
 
 ## **Primer desafío**
 Se solicita que leamos el contenido del archivo `welcome.txt` ubicado en el directorio actual:
 
-![[ps1.png]]
+![ps1.png](resources/ps1.png)
 
 Para ello basta con utilizar el comando `Get-Content` que tiene PowerShell:
 
-![[ps2.png]]
+![ps2.png](resources/ps2.png)
 
 ## **Segundo desafío**
 Ahora debemos contar el número de palabras que existen en el archivo, entonces escribimos la ruta del archivo, utilizamos nuevamente el comando `Get-Content` y pipeamos el output a un segundo comando `Measure-Object` junto con la flag `–Word`:
@@ -16,13 +17,13 @@ Ahora debemos contar el número de palabras que existen en el archivo, entonces 
 Get-Content ./welcome.txt | Measure-Object -Word
 ```
 
-![[ps3_2.png]]
+![ps3_2.png](resources/ps3_2.png)
 
 ## **Tercer desafío**
 Ahora nos dice que hay un servidor escuchando para nuevas conexiones, para ver todos los sockets en escucha se puede utilizar el comando `netstat` junto con 
 la flag `l` o `--listening`:
 
-![[ps4_2.png]]
+![ps4_2.png](resources/ps4_2.png)
 
 ## **Cuarto desafío**
 Ahora debemos comunicarnos con el servidor y ver cuál es el status code que nos devuelve. Para ello existe el comando `Invoke-WebRequest`. Es necesario indicar la URI mediante la flag `-Uri`:
@@ -31,7 +32,7 @@ Ahora debemos comunicarnos con el servidor y ver cuál es el status code que nos
 Invoke-WebRequest -Uri 127.0.0.1:1225
 ```
 
-![[ps5.png]]
+![ps5.png](resources/ps5.png)
 
 El servidor responde con status code 401.
 
@@ -56,7 +57,7 @@ Invoke-WebRequest -Uri '127.0.0.1:1225' -Headers $Headers
 ```
 
 
-![[ps6.png]]
+![ps6.png](resources/ps6.png)
 
 
 
@@ -67,7 +68,7 @@ Ahora es necesario que descarguemos todos los contenidos de los endpoints utiliz
 Invoke-WebRequest -Uri '127.0.0.1:1225' -Headers $Headers | Select-Object -ExpandProperty links
 ```
 
-![[ps8.png]]
+![ps8.png](resources/ps8.png)
 
 Aquí se puede ver que existen 50 endpoints, entonces podemos crear un loop para que realice 50 iteraciones, recuperando cada uno de los documentos y contando las palabras que hay en ellos:
 
@@ -75,7 +76,7 @@ Aquí se puede ver que existen 50 endpoints, entonces podemos crear un loop para
 1..50 | ForEach-Object { Invoke-WebRequest 127.0.0.1:1225/endpoints/$_ -Headers $Headers | measure -word }
 ```
 
-![[ps9.png]]
+![ps9.png](resources/ps9.png)
 
 Como el contenido del output no entra en el emulador de terminal, tuve que hacer zoom out, y puede verse que el archivo con 138 palabras es el numero 13. Para obtener este archivo, puede ejecutarse los siguientes comandos:
 
@@ -84,7 +85,7 @@ Invoke-WebRequest -Uri 127.0.0.1:1225/endpoints/13 -Headers $Headers -OutFile fi
 Get-Content file13.txt
 ```
 
-![[ps10.png]]
+![ps10.png](resources/ps10.png)
 
 
 
@@ -96,7 +97,7 @@ Invoke-WebRequest -Uri 127.0.0.1:1225/token_overview.csv -Headers $Headers -OutF
 Get-Content token_overview.csv
 ```
 
-![[ps11.png]]
+![ps11.png](resources/ps11.png)
 
 
 
@@ -120,7 +121,7 @@ $Headers = @{
 Invoke-WebRequest -Uri 127.0.0.1:1225/tokens/4216B4FAF4391EE4D3E0EC53A372B2F24876ED5D124FE08E227F84D687A7E06C -Headers $Headers
 ``` 
 
-![[ps14.png]]
+![ps14.png](resources/ps14.png)
 
 En ese momento se me ocurrió intentar con el hash MD5 correspondiente al token, modificando nuevamente la variable `headers`:
 
@@ -140,7 +141,7 @@ Invoke-WebRequest -Uri 127.0.0.1:1225/tokens/4216B4FAF4391EE4D3E0EC53A372B2F2487
 ## **Noveno desafío**
 El servidor respondió con un código MFA e indicó que debemos establecerlo dentro del valor de la cookie `mfa_code`, en la URI `http://127.0.0.1:1225/mfa_validate/4216B4FAF4391EE4D3E0EC53A372B2F24876ED5D124FE08E227F84D687A7E06C`:
 
-![[ps15.png]]
+![ps15.png](resources/ps15.png)
 
 ```powershell
 $Headers = @{
@@ -190,6 +191,6 @@ $decoded = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64St
 Write-Output $decoded
 ```
 
-![[ps17.png]]
+![ps17.png](resources/ps17.png)
 
 Tal y como puede verse en la imagen, el output contiene la contraseña personal "*SnowLeopard2ReadyForAction*". Aquí termina el desafío en dificultad "**Silver**".
