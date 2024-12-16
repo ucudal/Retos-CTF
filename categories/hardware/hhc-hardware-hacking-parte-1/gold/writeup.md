@@ -2,7 +2,7 @@
 
 Se solicita lograr la conexion a una interfaz UART donde, lo que debemos hacer, es conectar correctamente los pines de una placa y configurar ciertos parametros para dicha conexion como, por ejemplo, cantidad de bits de datos, puerto, bits de control, entre otros. Dado que en un inicio no se proporciona ningun tipo de sugerencia respecto a estos valores, no quedo otra mas que inmergirse en el codigo en busqueda de pistas y, por supuesto, de entendimiento de la logica. En este analisis, se hallaron dos bloques fundamentales. 
 
-![image.png](Hardware%20Part%20I%20-%20Gold%2015ee579738f580f0b5efc1aef5b05207/image.png)
+![image1.png](resources/image1.png)
 
 Por un lado, se halla comentado en el codigo que, si bien ahora el `POST` de validación de la solucion (al servidor) se hace contra la segunda version (v2) de la API, existia previamente la version v1; la cual se indica que es vulnerable a ataques de fuerza bruta. Asimismo, se evidencia en el codigo el formato de esta pegada donde, lo que se valida y envia es lo siguiente:
 
@@ -10,7 +10,7 @@ Por un lado, se halla comentado en el codigo que, si bien ahora el `POST` de val
 - `payload` - formado por los indices de los valroes asignados a los parámetros de la conexión.
 - `voltaje` - valor de voltaje seleccionado en la placa 3V/5V.
 
-![Captura de pantalla 2024-12-16 a la(s) 6.47.45 p. m..png](Hardware%20Part%20I%20-%20Gold%2015ee579738f580f0b5efc1aef5b05207/Captura_de_pantalla_2024-12-16_a_la(s)_6.47.45_p._m..png)
+![image2.png](resources/image2.png)
 
 Para la fijacion del `requestID`, basto con colocar un breakpoint en una llamada cualquiera y obtener de ahi el uuid enviado. En lo que al voltaje refiere, observando sentencias condicionales en el codigo, se nota que unicamente se procede a llamar a la API cuando el voltaje es igual a 3. Y por ultimo, la parte compleja, el payload tomaria todos los distintos valores posibles en el ataque de fuerza bruta a la v1 hasta dar con la solucion correcta.
 
