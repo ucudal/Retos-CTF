@@ -117,3 +117,13 @@ public class AESDecryptor {
 Finalmente conseguimos desencriptar ambas cadenas y obtener el nombre de la persona que fue eliminada de la tabla “NormalList”.
 
 ![imagen4.png](resources/image4.png)
+
+Herramientas:
+- **Kali Linux**
+- **bundletool**
+- **apktool**
+- **MobSF**
+- **keytool**
+- **apksigner**
+- **Java**
+- **Base64 Decoder**
