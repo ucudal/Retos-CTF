@@ -19,6 +19,8 @@ El objetivo principal de esta base de conocimientos es:
 - [Mobile](./categories/mobile/README.md)
 - [Web](./categories/web/README.md)
 - [Crypto](./categories/crypto/README.md)
+- [Miscellaneous](./categories/misc/README.md)
+- [Hardware](./main/categories/hardware/README.md)
 
 ## Getting started
 - [Getting started](/getting-started/README.md):  
