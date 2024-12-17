@@ -322,4 +322,4 @@ print base64_encoded
 
 ## Conclusiones
 
-A lo largo del análisis, se investigaron y documentaron los eventos clave relacionados con la actividad maliciosa en el sistema, utilizando consultas en KQL ****para identificar patrones y rastrear la actividad del atacante. El uso de KQL permitió un análisis detallado de los logs del sistema, facilitando la identificación de las tácticas y herramientas empleadas por los atacantes.
+A lo largo del análisis, se investigaron y documentaron los eventos clave relacionados con la actividad maliciosa en el sistema, utilizando consultas en KQL para identificar patrones y rastrear la actividad del atacante. El uso de KQL permitió un análisis detallado de los logs del sistema, facilitando la identificación de las tácticas y herramientas empleadas por los atacantes.
