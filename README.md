@@ -7,7 +7,7 @@ Este repositorio fue creado por un grupo de estudiantes de Informática de la UC
 
 Como parte de nuestra preparación, realizamos el SANS Holiday Hack Challenge, una competencia anual organizada por SANS. Este evento incluye una serie de desafíos de ciberseguridad en áreas como análisis forense, redes, explotación web, ingeniería inversa y más, con el objetivo de desarrollar habilidades técnicas avanzadas en un entorno práctico y lúdico.
 
-# Propósito del repositorio
+## Propósito del repositorio
 El objetivo principal de esta base de conocimientos es:
 
 - Documentar las soluciones a desafíos de CTF y los aprendizajes asociados.
