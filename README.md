@@ -22,6 +22,7 @@ El objetivo principal de esta base de conocimientos es:
 - [Miscellaneous](./categories/misc/README.md)
 - [Hardware](./main/categories/hardware/README.md)
 
+
 ## Getting started
 - [Getting started](/getting-started/README.md):  
     Una guía básica para entender y empezar en el mundo de los CTF.
