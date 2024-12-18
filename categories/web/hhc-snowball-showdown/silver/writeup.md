@@ -8,13 +8,13 @@ El desafío **Snowball Showdown** consiste en derrotar a los enemigos lanzando b
 ## Problema Principal  
 1. **Posiciones estratégicas**: Los enemigos se ubican de forma no estática, complicando los disparos.  
 2. **Tiempo limitado**: El jugador debe actuar rápidamente, lo que complica la precisión del disparo.  
-3. **Imprecisión manual**: Ajustar ángulos y fuerzas de disparo manualmente es ineficiente para impactar a múltiples objetivos.  
+3. **Imprecisión manual**: Ajustar ángulos y calcular distancias de disparo manualmente es ineficiente para impactar al rival.  
 4. **Performance del enemigo**: El rival tiene más facilidad, precisión y velocidad, por lo qué, generalmente sale victorioso.
 
 ---
 
 ## Solución Final: Automatización del Disparo  
-Implementamos un script que lanza **50 bolas de nieve** automáticamente desde una posición fija, con trayectorias y velocidades aleatorias. Esto aumentó la probabilidad de impacto sin ser detectado por el servidor. La ubicación de los disparos es en el centro de la pantalla donde se encuentra el divisor entre nuestra posición y la del rival. Al modificar el radio del daño generado, somos capaces de destruir la pared de nieve y pasar hacia el otro lado, logrando derrotar al enemigo teniendo una ubicación más cercana y evitando sus disparos.
+Desarrollamos un script que lanza **50 bolas de nieve** automáticamente desde una posición central fija, utilizando trayectorias y velocidades aleatorias para maximizar el impacto. Ejecutamos el código desde la consola del navegador, evitando la detección del servidor. Los disparos se concentran en el área central, donde se encuentra la pared divisoria. Ajustando el radio de daño, logramos destruir la barrera, avanzar hacia el enemigo y derrotarlo desde una posición más cercana, esquivando sus ataques con mayor facilidad.
 
 ### Código Implementado  
 ```javascript
