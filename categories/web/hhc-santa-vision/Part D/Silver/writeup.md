@@ -2,7 +2,7 @@
 
 ## Introducción
 
-En esta última parte debemos demotar a Wombley y Alabaster para poder ver a Santa en la northpolefeeds.
+En esta última parte debemos privar de sus privilegios de admin a Wombley y Alabaster para poder ver a Santa en la northpolefeeds.
 
 ---
 
@@ -70,7 +70,7 @@ El mensaje parece haber sido enviado. Regresamos a la GUI de MQTTX para ver si h
 
 ## Paso 3: Conectarse a la northpolefeeds y observar en qué está Santa
 
-Luego de demotear a Alabaster y Wombley, esperamos que la northpolefeeds ya no esté siendo llenada de propaganda para los elfos y podamos llegar a ver los mensajes de Santa. Para ello primero volvemos al sitio web y nos conectamos a la northpolefeeds:
+Luego de remover los privilegios de Alabaster y Wombley, esperamos que la northpolefeeds ya no esté siendo llenada de propaganda para los elfos y podamos llegar a ver los mensajes de Santa. Para ello primero volvemos al sitio web y nos conectamos a la northpolefeeds:
 
 ![alt text](resources/image-14.png)
 
