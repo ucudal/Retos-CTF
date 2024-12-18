@@ -2,11 +2,7 @@
 
 ## Introducción
 
-Este ejercicio consiste en explorar una página web relacionada con drones. El objetivo es descubrir información sensible y obtener una clave de despegue de uno de los drones. Para obtener la medalla **Gold**, no es necesario haber obtenido previamente la medalla **Silver**.
-
-## Análisis Inicial
-
-Los primeros pasos son los mismos a los que se realizan en la parte Silver.
+Este ejercicio consiste en explorar una página web relacionada con drones. El objetivo es descubrir información sensible y obtener una clave de despegue de uno de los drones. Para obtener la medalla **Gold**, no es necesario haber obtenido previamente la medalla **Silver**; aunque los primeros pasos son los mismos que los que se realizan en dicha parte.
 
 ## Paso 1: Intento de acceso con credenciales por defecto
 
