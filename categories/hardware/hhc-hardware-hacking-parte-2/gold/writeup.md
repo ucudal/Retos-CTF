@@ -111,3 +111,7 @@ Finalmente, actualizamos el campo **sig** de la tarjeta 42 con el nuevo HMAC gen
 ```sql
 UPDATE access_cards SET sig='135a32d5026c5628b1753e6c67015c0f04e26051ef7391c2552de2816b1b7096' WHERE id=42;
 ```
+
+Resultado:
+
+![image.png](resources/image.png)
