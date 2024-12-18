@@ -26,6 +26,3 @@ El objetivo principal de esta base de conocimientos es:
 ## Getting started
 - [Getting started](/getting-started/README.md):  
     Una guía básica para entender y empezar en el mundo de los CTF.
-
-## About us
-- [Sobre nosotros ¿?](/about-us/README.md)
