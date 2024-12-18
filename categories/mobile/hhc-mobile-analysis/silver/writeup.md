@@ -21,11 +21,3 @@ sudo docker run -it -p 8000:8000 opensecurity/mobile-security-framework-mobsf
 Entramos a MobSF con las credenciales por defecto mobsf/mobsf y escaneamos el archivo SantaSwipe.apk, luego mirando el código podemos ver en com/northpole/santaswipe/MainActivity.java que filtra de la lista el Item “Ellie”, por lo que este es el niño que falta en la lista por un error en la query:
 
 ![imagenCodigo](resources/image.png)
-
-2da Parte (Gold)
-
-Convertir SantaSwipeSecure.aab a SantaSwipeSecure.apks
-
-```bash
-java -jar bundletool-all-1.17.2.jar build-apks --bundle=SantaSwipeSecure.aab --output=SantaSwipeSecure.apks --mode=universal
-```
