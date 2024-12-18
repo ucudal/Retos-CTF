@@ -1,4 +1,12 @@
-2da Parte (Gold)
+# Mobile-Analisis 2da Parte (Gold)
+
+## Introducción 
+
+El objetivo principal de este desafío era encontrar el nombre de la persona que faltaba en la lista de regalos, una tarea que inicialmente parecía simple pero que escondía una serie de retos técnicos y lógicos. El nombre estaba encriptado en distintos archivos proporcionados, y la única forma de descifrarlo era transformar los archivos en un formato que pudiera ser analizado de manera eficiente.
+
+Para lograrlo, era necesario combinar múltiples habilidades técnicas, incluyendo el manejo de archivos y el uso de herramientas de análisis de código fuente. Además, se requería un entendimiento profundo de cómo extraer, filtrar y analizar información clave oculta dentro de los archivos.
+
+## Desarrollo
 
 Convertir SantaSwipeSecure.aab a SantaSwipeSecure.apks
 
@@ -16,12 +24,11 @@ La clase “MainActivity.java” contiene código que trabaja con una  base de d
 
 También contiene funciones llamadas “encryptData” y “decryptData” las cuales sirven para cifrar y descifrar un texto plano utilizando AES/GCM/NoPadding junto a una clave secreta y un vector de inicialización (IV) almacenado en la clase.
 
-Luego de investigar y analizar el código, optamos por realizar un script en java que se encargue de descifrar cualquier texto que se le envíe utilizando los mismos parámetros que se utilizaron para cifrarlo (IV y EK).
-
 ![Imagen1](resources/image2.png)
 
 ![Imagen2](resources/image3.png)
 
+Luego de investigar y analizar el código, optamos por realizar un script en java que se encargue de descifrar cualquier texto que se le envíe utilizando los mismos parámetros que se utilizaron para cifrarlo (IV y EK).
 Generamos un certificado para firmar el apk y poder ejecutarlo y luego lo firmamos con ese certificado, usando keytool y apksigner
 
 ```bash
