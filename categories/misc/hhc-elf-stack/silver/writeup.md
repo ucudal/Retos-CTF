@@ -1,4 +1,16 @@
-# Elf Stack
+# Elf Stack Silver
+
+## Introducción
+
+En este desafío, se nos entregaron varios archivos con registros o logs, los cuales debían ser analizados utilizando herramientas y comandos de la línea de comandos de Linux, como cat, grep, curl, sort y uniq, entre otros. El propósito principal era extraer información relevante de estos archivos mediante la combinación de diferentes comandos y opciones.
+
+Los logs son registros detallados de eventos generados por sistemas, aplicaciones o servidores que almacenan información crítica, como el acceso de usuarios, URLs visitadas, códigos de respuesta, direcciones IP y fechas de los eventos.
+
+El desafío constaba de diferentes niveles de dificultad, con preguntas que iban desde simples consultas hasta análisis más complejos de los registros. 
+
+A continuación, se detalla cada comando utilizado para resolver las preguntas del desafío
+
+## Desarrollo
 
 1. cat *.log | cut -d " " -f 4 | sort | uniq  respuesta: 5
 2. cat *.log | cut -d " " -f 4 | sort | uniq -c  respuesta: AuthLog
@@ -55,6 +67,7 @@
 respuesta: 0
 
 ![image.png](resources/image 12.png)
+
 
 ### ¿Cómo funciona cada comando?
 
