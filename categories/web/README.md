@@ -14,3 +14,5 @@
 
 - Snowball Showdown ( [gold](./hhc-snowball-showdown/gold/writeup.md) / [silver](./hhc-snowball-showdown/silver/writeup.md) )
 
+- Santa Vision ( [silver](./hhc-santa-vision/) )
+
