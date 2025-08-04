@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="600" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+    <rect fill="white" stroke="black" stroke-width="0" opacity="1" x="0" y="0" width="1200" height="600">
+    </rect>
+    <g fill="black" stroke="black" stroke-width="0" opacity="1" font-size="20" font-family="arial" transform="translate(75 0)">
+        <line stroke="black" stroke-width="2" opacity="1" x1="200" y1="85" x2="200" y2="135">
+        </line>
+        <line stroke="black" stroke-width="2" opacity="1" x1="190" y1="125" x2="200" y2="135">
+        </line>
+        <line stroke="black" stroke-width="2" opacity="1" x1="210" y1="125" x2="200" y2="135">
+        </line>
+        <rect fill="white" stroke="black" stroke-width="2" opacity="1" x="100" y="150" width="200" height="200">
+        </rect>
+        <text fill="black" stroke="black" stroke-width="0" opacity="1" font-size="20" x="200" y="250" text-anchor="middle" alignment-baseline="central">
+            Encriptar
+        </text>
+        <line stroke="black" stroke-width="2" opacity="1" x1="200" y1="365" x2="200" y2="415">
+        </line>
+        <line stroke="black" stroke-width="2" opacity="1" x1="190" y1="405" x2="200" y2="415">
+        </line>
+        <line stroke="black" stroke-width="2" opacity="1" x1="210" y1="405" x2="200" y2="415">
+        </line>
+        <line stroke="black" stroke-width="2" opacity="1" x1="40" y1="250" x2="90" y2="250">
+        </line>
+        <line stroke="black" stroke-width="2" opacity="1" x1="80" y1="240" x2="90" y2="250">
+        </line>
+        <line stroke="black" stroke-width="2" opacity="1" x1="80" y1="260" x2="90" y2="250">
+        </line>
+        <text fill="black" stroke="black" stroke-width="0" opacity="1" font-size="25" x="0" y="260" text-anchor="middle" alignment-baseline="central">
+            Clave
+        </text>
+        <text fill="black" stroke="black" stroke-width="0" opacity="1" font-size="30" x="200" y="70" text-anchor="middle" alignment-baseline="central">
+            Bloque 1
+        </text>
+        <text fill="black" stroke="black" stroke-width="0" opacity="1" font-size="25" x="200" y="440" text-anchor="middle" alignment-baseline="central">
+            Texto encriptado 1
+        </text>
+    </g>
+    <g fill="black" stroke="black" stroke-width="0" opacity="1" font-size="20" font-family="arial" transform="translate(475 0)">
+        <line stroke="black" stroke-width="2" opacity="1" x1="200" y1="85" x2="200" y2="135">
+        </line>
+        <line stroke="black" stroke-width="2" opacity="1" x1="190" y1="125" x2="200" y2="135">
+        </line>
+        <line stroke="black" stroke-width="2" opacity="1" x1="210" y1="125" x2="200" y2="135">
+        </line>
+        <rect fill="white" stroke="black" stroke-width="2" opacity="1" x="100" y="150" width="200" height="200">
+        </rect>
+        <text fill="black" stroke="black" stroke-width="0" opacity="1" font-size="20" x="200" y="250" text-anchor="middle" alignment-baseline="central">
+            Encriptar
+        </text>
+        <line stroke="black" stroke-width="2" opacity="1" x1="200" y1="365" x2="200" y2="415">
+        </line>
+        <line stroke="black" stroke-width="2" opacity="1" x1="190" y1="405" x2="200" y2="415">
+        </line>
+        <line stroke="black" stroke-width="2" opacity="1" x1="210" y1="405" x2="200" y2="415">
+        </line>
+        <line stroke="black" stroke-width="2" opacity="1" x1="40" y1="250" x2="90" y2="250">
+        </line>
+        <line stroke="black" stroke-width="2" opacity="1" x1="80" y1="240" x2="90" y2="250">
+        </line>
+        <line stroke="black" stroke-width="2" opacity="1" x1="80" y1="260" x2="90" y2="250">
+        </line>
+        <text fill="black" stroke="black" stroke-width="0" opacity="1" font-size="25" x="0" y="260" text-anchor="middle" alignment-baseline="central">
+            Clave
+        </text>
+        <text fill="black" stroke="black" stroke-width="0" opacity="1" font-size="30" x="200" y="70" text-anchor="middle" alignment-baseline="central">
+            Bloque 2
+        </text>
+        <text fill="black" stroke="black" stroke-width="0" opacity="1" font-size="25" x="200" y="440" text-anchor="middle" alignment-baseline="central">
+            Texto encriptado 2
+        </text>
+    </g>
+    <g fill="black" stroke="black" stroke-width="0" opacity="1" font-size="20" font-family="arial" transform="translate(875 0)">
+        <line stroke="black" stroke-width="2" opacity="1" x1="200" y1="85" x2="200" y2="135">
+        </line>
+        <line stroke="black" stroke-width="2" opacity="1" x1="190" y1="125" x2="200" y2="135">
+        </line>
+        <line stroke="black" stroke-width="2" opacity="1" x1="210" y1="125" x2="200" y2="135">
+        </line>
+        <rect fill="white" stroke="black" stroke-width="2" opacity="1" x="100" y="150" width="200" height="200">
+        </rect>
+        <text fill="black" stroke="black" stroke-width="0" opacity="1" font-size="20" x="200" y="250" text-anchor="middle" alignment-baseline="central">
+            Encriptar
+        </text>
+        <line stroke="black" stroke-width="2" opacity="1" x1="200" y1="365" x2="200" y2="415">
+        </line>
+        <line stroke="black" stroke-width="2" opacity="1" x1="190" y1="405" x2="200" y2="415">
+        </line>
+        <line stroke="black" stroke-width="2" opacity="1" x1="210" y1="405" x2="200" y2="415">
+        </line>
+        <line stroke="black" stroke-width="2" opacity="1" x1="40" y1="250" x2="90" y2="250">
+        </line>
+        <line stroke="black" stroke-width="2" opacity="1" x1="80" y1="240" x2="90" y2="250">
+        </line>
+        <line stroke="black" stroke-width="2" opacity="1" x1="80" y1="260" x2="90" y2="250">
+        </line>
+        <text fill="black" stroke="black" stroke-width="0" opacity="1" font-size="25" x="0" y="260" text-anchor="middle" alignment-baseline="central">
+            Clave
+        </text>
+        <text fill="black" stroke="black" stroke-width="0" opacity="1" font-size="30" x="200" y="70" text-anchor="middle" alignment-baseline="central">
+            Bloque 3
+        </text>
+        <text fill="black" stroke="black" stroke-width="0" opacity="1" font-size="25" x="200" y="440" text-anchor="middle" alignment-baseline="central">
+            Texto encriptado 3
+        </text>
+    </g>
+</svg>
