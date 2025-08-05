@@ -1,11 +1,10 @@
 ````markdown
 # Integer Overflow Magic
-## CATEGORÍA: Pwn / Reversing
+## CATEGORÍA: micellaneous
 
 ### PRESENTACIÓN DEL PROBLEMA:
 Se proporciona un archivo en lenguaje C que al ejecutarse pide un número por entrada estándar (`scanf`) y evalúa una condición aparentemente imposible: que un número positivo sea mayor que sí mismo más uno. Si esa condición se cumple, imprime el contenido de `flag.txt`.
 
-CAPTURA DE PANTALLA DE LO QUE ENFRENTARON  
 Código fuente:
 
 ```c
